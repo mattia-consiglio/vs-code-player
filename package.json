@@ -1,0 +1,54 @@
+{
+	"name": "vs-code-player",
+	"version": "1.0.0",
+	"description": "A React component for VS Code player",
+	"type": "module",
+	"main": "dist/index.js",
+	"module": "dist/index.esm.js",
+	"types": "dist/index.d.ts",
+	"files": [
+		"dist"
+	],
+	"scripts": {
+		"dev": "rollup -c -w",
+		"build": "rollup -c",
+		"test": "jest",
+		"lint": "eslint src/**/*.{ts,tsx}",
+		"prepare": "npm run build"
+	},
+	"keywords": [
+		"react",
+		"typescript",
+		"vscode",
+		"player",
+		"monaco-editor",
+		"vs-code-recorder",
+		"vs-code-player"
+	],
+	"author": "Mattia Consiglio",
+	"license": "MIT",
+	"peerDependencies": {
+		"react": ">=18.0.0",
+		"react-dom": ">=18.0.0"
+	},
+	"dependencies": {
+		"@monaco-editor/react": "^4.6.0",
+		"monaco-editor": "^0.45.0",
+		"tslib": "^2.6.2"
+	},
+	"devDependencies": {
+		"@types/react": "^18.2.0",
+		"@types/react-dom": "^18.2.0",
+		"@typescript-eslint/eslint-plugin": "^8.6.0",
+		"@typescript-eslint/parser": "^8.6.0",
+		"eslint": "^8.0.0",
+		"eslint-plugin-react": "^7.33.0",
+		"eslint-plugin-react-hooks": "^4.6.0",
+		"jest": "^29.0.0",
+		"rollup": "^4.0.0",
+		"@rollup/plugin-typescript": "^12.0.0",
+		"@rollup/plugin-commonjs": "^25.0.0",
+		"@rollup/plugin-node-resolve": "^15.0.0",
+		"typescript": "^5.0.0"
+	}
+}
