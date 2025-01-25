@@ -1,0 +1,124 @@
+.vs-code-player {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: #1e1e1e;
+  color: #d4d4d4;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  height: 100%;
+  width: 100%;
+}
+
+.player-controls {
+  position: relative;
+  padding: 0.5rem;
+  background-color: #252526;
+  border-top: 1px solid #333;
+}
+
+.progress-bar-wrapper {
+  position: relative;
+  height: 4px;
+  background-color: rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+  margin-bottom: 0.5rem;
+}
+
+.progress {
+  position: absolute;
+  height: 100%;
+  background-color: #3399cc;
+  transition: width 0.1s ease-out;
+}
+
+.hover-progress {
+  position: absolute;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.circle {
+  position: absolute;
+  top: 50%;
+  width: 12px;
+  height: 12px;
+  background-color: #3399cc;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: transform 0.1s ease-out;
+  opacity: 0;
+}
+
+.circle.active {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1.2);
+}
+
+.time-hover-text {
+  position: absolute;
+  top: -25px;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 2px 4px;
+  border-radius: 2px;
+  font-size: 12px;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.left, .right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+button {
+  background: none;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+  padding: 0.25rem;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  transition: color 0.2s ease-out;
+}
+
+button:hover {
+  color: #3399cc;
+}
+
+.speed-menu {
+  position: absolute;
+  bottom: 100%;
+  right: 0;
+  background-color: #252526;
+  border: 1px solid #333;
+  border-radius: 4px;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  min-width: 100px;
+}
+
+.speed-option {
+  padding: 0.25rem 0.5rem;
+  text-align: left;
+  border-radius: 2px;
+}
+
+.speed-option:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.speed-option.active {
+  color: #3399cc;
+} 
